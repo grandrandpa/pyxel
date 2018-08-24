@@ -1,5 +1,16 @@
 # Change Log
 
+## 0.7.11
+- Changed the Japanese link name in the READMEs
+- Added the script to format python code
+- Implemented the widget class for the resource editor
+- Added the example #6 by ttrkaya
+
+## 0.7.10
+- Added screen size error
+- Added the link to the Pyxel wiki to the READMEs
+- Moved the README in Portuguese to the Pyxel wiki
+
 ## 0.7.9
 - Changed the color of the system font texture to white
 - Fixed a typo in the README.md

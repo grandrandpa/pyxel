@@ -1,15 +1,8 @@
-import pyxel
-
-from .mode import Mode
+from .screen import Screen
 
 
-class MusicEditor(Mode):
-    def __init__(self):
-        super().__init__('music_editor.png')
+class MusicEditor(Screen):
+    def __init__(self, parent):
+        super().__init__(parent, 'music_editor.png')
 
-    def update(self):
-        super().update()
-        pass
-
-    def draw(self):
-        super().draw()
+        self.add_event_handler('draw', self.draw_not_implemented_message)

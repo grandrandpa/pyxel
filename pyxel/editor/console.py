@@ -1,14 +1,8 @@
-import pyxel
-
-from .mode import Mode
+from .screen import Screen
 
 
-class Console(Mode):
-    def __init__(self):
-        super().__init__('console.png')
+class Console(Screen):
+    def __init__(self, parent):
+        super().__init__(parent, 'console.png')
 
-    def update(self):
-        super().update()
-
-    def draw(self):
-        super().draw()
+        self.add_event_handler('draw', self.draw_not_implemented_message)

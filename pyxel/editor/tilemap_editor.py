@@ -1,14 +1,8 @@
-import pyxel
-
-from .mode import Mode
+from .screen import Screen
 
 
-class TileMapEditor(Mode):
-    def __init__(self):
-        super().__init__('tilemap_editor.png')
+class TileMapEditor(Screen):
+    def __init__(self, parent):
+        super().__init__(parent, 'tilemap_editor.png')
 
-    def update(self):
-        super().update()
-
-    def draw(self):
-        super().draw()
+        self.add_event_handler('draw', self.draw_not_implemented_message)
